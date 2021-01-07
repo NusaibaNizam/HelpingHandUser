@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/contentET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Your Phone Number"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal" />
+    <Button
+        android:id="@+id/enterBT"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/resendTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Resend Verification Code?"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:onClick="sendVerificationCode"/>
+    <TextView
+        android:id="@+id/changePhoneTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Change Phone Number?"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:onClick="changePhoneNumber"/>
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorError"
+        android:text="An Error Has Occurred"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

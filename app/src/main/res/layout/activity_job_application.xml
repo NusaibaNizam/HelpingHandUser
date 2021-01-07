@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobApplicationActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+    <EditText
+        android:id="@+id/preferredLocationET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Your Preferred Location"
+        android:textColorHint="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/expectedSalaryET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Your Expected Salary In Taka"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:textColorHint="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+    <Spinner
+        android:id="@+id/genderSP"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        ></Spinner>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Apply For"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:gravity="center_horizontal" />
+    <Spinner
+        android:id="@+id/jobSP"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        ></Spinner>
+    <Button
+        android:id="@+id/frontBT"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="NID Card Front Pic"
+        android:onClick="uploadNID"/>
+    <Button
+        android:id="@+id/backBT"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:text="NID Card Back Pic"
+        android:onClick="uploadNID"/>
+    <Button
+        android:id="@+id/applyBT"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        android:text="Apply"
+        android:onClick="apply"/>
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorError"
+        android:text="An Error Has Occurred"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+</LinearLayout>
